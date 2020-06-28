@@ -18,11 +18,9 @@ sub href_test {
     $langs_href{'Italy'} = 'Italian';
 
     my $lang = $langs_href{'England'};
-
     my $ital_lang = $langs_href{'Italy'};
 
     print "England lang: $lang\n";
-
     print "Italy lang: $ital_lang\n";
 
     print "iterating:\n";
@@ -39,7 +37,6 @@ sub href_test {
     print("Now we'll do it using map:\n");
     map { print("The official language of $_ is $langs_href{ $_ }\n") }
       keys %langs_href;
-
 
     print Dumper \%langs_href;
 }
@@ -120,6 +117,6 @@ sub multi_key_test {
 }
 
 # run our test functions
-#href_test;
-#array_test;
+href_test;
+array_test;
 multi_key_test;
