@@ -4,6 +4,7 @@ use warnings;
 use strict;
 
 use Data::Dumper;
+use Data::Printer;
 
 sub href_test {
 
@@ -109,6 +110,9 @@ sub multi_key_test {
             print("short: $val->{$var}{Short}\n");
         }
     }
+
+    print "or we can print it this way\n";
+    p %stateinfo;
 
     #my %val_href = values %stateinfo;
     #map { print("list of short values per key: $_{Abbreviation}{Short}\n") } values %val_href;
